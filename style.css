@@ -1,0 +1,418 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    display: grid;
+    /*permet de diviser le grid en nbre de colonne*/
+    grid-template-columns: 1fr 200px 200px 200px 200px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+
+      /*defini la taille du contenu avec  hauteur margin et padding: ;*/
+      grid-template-rows:  1fr auto auto auto auto;
+
+      height: 80px;
+     
+      
+      background: #353E4D;
+
+}
+
+
+.profil, .about, .port, .contact, .cv {
+    height: 80px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    /* padding-top: 30px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profil {
+    background: #353E4D;
+   }
+
+   .about {
+    background: #353E4D;
+   }
+
+
+   .port {
+    background: #353E4D;
+   }
+
+   .contact {
+    background: #353E4D;
+   }
+
+   .cv {
+    background: #353E4D;
+   }
+
+   .cv span{
+    display: block;
+    background-color: #fff;
+    color:#353E4D;
+    height: 50px;
+    width: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+
+   /* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #353E4D;;
+    position: relative;
+    display: none;
+    color: #353E4D;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #353E4D;;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #FF7900;
+    color: #fff;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #353E4D;
+    ;
+    color: white;
+  }
+
+
+  .apropos{
+    display: flex;
+    /* grid-template-columns: 520px 396px 154px;; */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* grid-template-rows: auto auto auto; */
+    /* grid-gap: 80px 120px; */
+    justify-content: space-around;
+    margin-top: 40px;
+
+    align-items: center;
+  }
+
+  .liens, .photo, .bienvenue{
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .liens{
+    width: 80px;
+    height: 350px;
+  }
+
+  .photo{
+    width: 300px;
+    height: 350px;
+  }
+
+  .bienvenue{
+    width: 420px;
+    height: 250px;
+    position: relative;
+  }
+
+  .comments{
+    position: absolute;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 170px;
+    left: 0px;
+    top: 510px;
+    background: #353E4D;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .prix, .clients, .experiences, .projets{
+    /* height: 28vh;
+    width: 15vw; */
+
+    width: 110px;
+    height: 120px;
+
+    border-top-right-radius: 25px;
+  }
+
+  .prix{
+    /* width: 150px; */
+    border: 4px solid #fff;
+    box-sizing: border-box;
+    border-style: dashed;
+
+  }
+
+  .clients{
+    /* width: 150px; */
+    border: 4px solid #fff;
+  }
+
+  .experiences{
+    /* width: 150px; */
+    border: 4px solid #fff;
+  }
+
+  .projets{
+    /* width: 150px; */
+    border: 4px solid #fff;
+    border-style: dashed;
+  }
+
+  .ctr-bienvenue{
+    position: absolute;
+    width: 170px;
+    top: 15px;
+    left: 15px;
+    background: #353E4D;
+    text-align: center;
+    color: #fff;
+  }
+
+  .identite{
+    position: absolute; 
+    line-height: 31px;
+    top:45px;
+    left: 15px;
+    color: #353E4D;
+  }
+
+  .profession{
+    position: absolute;
+    left: 15px;
+    top: 80px;
+    font-weight: 700;
+    color: #353E4D;
+
+  }
+
+  .description-profil{
+    position: absolute;
+    left: 15px;
+    top: 110px;
+    text-align: justify;
+    right: 15px;
+    
+  }
+
+  .liens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .fa-github, .fa-facebook, .fa-linkedin, .fa-gitlab{
+    color: #353E4D;
+    font-size: 40px;
+  }
+
+  .cv-mobile{
+    /* float: right; */
+    margin-right: 40px;
+    background: #353E4D;
+    padding: 15px;
+    margin: 10px;
+    height: 45px;
+    color: #fff;
+  }
+
+  .photo-mobile{
+    height: 180px;
+    width: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);    
+  }
+
+  .bas_menu_mobile{
+    display: none;
+  }
+
+  .comments-mobile{
+    position: absolute;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 95%;
+    /* height: 170px; */
+    top: 700px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+
+
+
+
+
+  @media (max-width: 845px)
+  { 
+
+    .apropos{
+        justify-content: space-between;
+        
+    }
+
+    .bienvenue{
+        position: relative;
+        width: 250px;
+        height: 350px;
+      }
+
+      .photo{
+        width: 250px;
+      }
+
+      
+      /* .prix, .clients, .experiences, .projets{
+    
+        width: 130px;
+        height: 100px;
+    
+        border-top-right-radius: 25px;
+      } */
+      
+  }
+
+
+
+  @media screen and (max-width: 767px)
+  { 
+      .topnav{
+          display: block!important;
+      } 
+      .menu{
+          display: none;
+      }
+      .apropos{
+        
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .liens{
+        display: none;
+    }
+    .bienvenue{
+       width: 95%;
+      }
+    
+      .photo{
+        width: 95%;
+        margin-top: 40px;
+        display: none;
+      }
+
+      .bas_menu_mobile{
+        display: flex;
+
+        margin-top: 40px;
+
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .prix, .clients, .experiences, .projets{
+    
+        width: auto;
+        height: auto;
+    
+        border-top-right-radius: 25px;
+      }
+    
+
+      .comments{
+        display: none;
+    }
+
+    .comments-mobile{
+        display: block;
+    }
+    
+  }
+
+  @media screen and (max-width: 400px){
+    .bas_menu_mobile{
+        flex-direction: column-reverse;
+      }
+
+      .cv-mobile{
+        margin-bottom: 40px;
+        box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+      }
+
+      .comments-mobile{
+        top: 800px;
+
+    }
+  }
+
+  @media screen and (max-width: 250px)
+  { 
+    .ctr-bienvenue{
+        left: 4px;
+        font-size: 18px;
+        width: 95%;
+      }
+    
+      .identite{
+        left: 4px;
+        font-size: 15px;
+      }
+    
+      .profession{
+        left: 4px;
+        font-size: 15px;
+      }
+      .description-profil{
+        left: 4px;
+        font-size: 15px;
+      }
+    
+  }
+
+

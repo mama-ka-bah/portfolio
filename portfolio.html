@@ -3,11 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio KEITA Mahamadou</title>
 </head>
 <body>
+    <header class="menu">
+        <div class="profil"><span>Logo</span></div>
+        <div class="about"><span>Apros de moi</span></div>
+        <div class="port"><span>Portfolio</span></div>
+        <div class="contact"><span>Contacts</span></div>
+        <div class="cv"><span>Télécharger</span></div>
+    </header>
+
+
+    <!-- Menu pour les mobile -->
+    <div class="topnav">
+        <a href="#" class="active">Logo</a>
+        <!-- les liens de navigation -->
+        <div id="myLinks">
+            <a href="#">À propos</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contacts</a>
+        </div>
+        <!-- le toggle icon et appel à la fonction js -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="bas_menu_mobile">
+        <div class="photo-mobile">
+            
+        </div>
+        <div class="cv-mobile">
+            <span>Télécharger</span>
+        </div>
+    </div>
     
+
+    <div class="apropos">
+        <div class="bienvenue">
+            <div>
+                <h2 class="ctr-bienvenue">bienvenue</h2>
+                <h2 class="identite">Mahamadou KEITA</h2>
+                <h3 class="profession">Develloppeur fullstack</h3>
+            </div>
+            <div>
+                <p class="description-profil">
+                    Lorem ipsum is a placeholder text commonly
+                    used to demonstrate the visual form of a document
+                    or a typeface without relying on meaningful content.
+                    Lorem ipsum may be used as
+                    a placeholder before final copy is available.
+
+                </p>
+            </div>
+        </div>
+        <div class="photo">
+
+        </div>
+        <div class="liens">
+            <div>
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+            <di>
+                <i class="fa fa-gitlab" aria-hidden="true"></i>
+            </di>
+            <di>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </di>
+            <di>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </di>
+        </div>
+
+        <div class="comments" style="color: white;">
+            <div class="prix" style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
+                <h2>02</h2>
+                <h2>clients</h2>
+            </div>
+            <div class="clients" style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
+                <h2>8 mois</h2>
+                <h2>Exp</h2>
+            </div style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
+            <div class="experiences" style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
+                <h2>03</h2>
+                <h2>clients</h2>
+            </div>
+            <div class="projets" style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
+                <h2>35</h2>
+                <h2>Projets</h2>
+            </div>
+        </div>
+    
+        <div class="comments-mobile">
+
+            <div class="prix">
+    
+            </div>
+            <div class="clients" style="display: flex; justify-content: center;">
+                <h2 style="margin-right: 60px;">Clients: </h2><h2 >03</h2>
+            </div>
+            <div class="experiences" style="display: flex; justify-content: center;">
+                <h2 style="margin-right: 60px;">Experiences: </h2><h2 >8 mois</h2>
+            </div>
+            <div class="projets" style="display: flex; justify-content: center;">
+                <h2 style="margin-right: 60px;">Projets: </h2><h2 >35</h2>
+            </div>
+    
+        </div>
+        
+    </div>
+
+    
+
+    <script type="text/javascript" src="script.js"></script>
+
+
 </body>
 </html>
