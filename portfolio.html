@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio KEITA Mahamadou</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Portfolio KEITA Mahamadou</title>
+    </head>
+    <body>
     <header class="menu">
         <div class="profil"><span>Logo</span></div>
         <div class="about"><span>Apros de moi</span></div>
@@ -36,7 +36,7 @@
 
     <div class="bas_menu_mobile">
         <div class="photo-mobile">
-            
+            <img src="images/keita.jpg">
         </div>
         <div class="cv-mobile">
             <span>Télécharger</span>
@@ -63,7 +63,7 @@
             </div>
         </div>
         <div class="photo">
-
+            <img id="keita" src="images/keita.jpg" alt="keita">
         </div>
         <div class="liens">
             <div>
@@ -88,15 +88,17 @@
             <div class="clients" style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
                 <h2>8 mois</h2>
                 <h2>Exp</h2>
-            </div style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
-            <div class="experiences" style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
-                <h2>03</h2>
-                <h2>clients</h2>
             </div>
-            <div class="projets" style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
-                <h2>35</h2>
-                <h2>Projets</h2>
-            </div>
+            <!-- <div style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;"> -->
+                <div class="experiences" style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
+                    <h2>03</h2>
+                    <h2>clients</h2>
+                </div>
+                <div class="projets" style="display: flex; align-items: center; flex-direction: column; padding-top: 30px;">
+                    <h2>35</h2>
+                    <h2>Projets</h2>
+                </div>
+            <!-- </div> -->
         </div>
     
         <div class="comments-mobile">
@@ -132,10 +134,10 @@
                 <h3>Tout</h3>
             </div>
             <div class="personnelsProjets">
-                <h3>Projets personnels</h3>
+                <h3>Personnels</h3>
             </div>
             <div class="professionnelsProjets">
-                <h3>Projets professionnels</h3>
+                <h3>Professionnels</h3>
             </div>
         </div>
         
@@ -144,30 +146,60 @@
     <div class="ContenuProjets">
         <div class="contenuToutProjets">
             <div class="projet">
-
+                <img src="images/error.png" alt="error">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
+                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
+                     deserunt excepturi debitis
+                </p>
             </div>
             <div class="projet">
-
+                <img src="images/art.png" alt="art mali">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
+                    <!-- nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
+                     deserunt excepturi debitis -->
+                </p>
             </div>
             <div class="projet">
-
+                <img src="images/erp.png" alt="erp">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
+                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
+                     deserunt excepturi debitis
+                </p>
             </div>
             <div class="projet">
-
+                <img src="images/security.png" alt="security">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
+                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
+                     deserunt excepturi debitis
+                </p>
             </div>
             <div class="projet">
-
+                <img src="images/enviro2.png" alt="images">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
+                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
+                     deserunt excepturi debitis
+                </p>
             </div>
             <div class="projet">
-
+                <img src="images/tirage.png" alt="tirage">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
+                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
+                     deserunt excepturi debitis
+                </p>
             </div>
         </div>
-        <div class="contenuPersonnelsProjets">
+        <!-- <div class="contenuPersonnelsProjets">
             
         </div>
         <div class="contenuProfessionnelsProjets">
             
-        </div>
+        </div> -->
 
         <div class="plus">
             Voir plus
@@ -334,34 +366,46 @@
                 <h2>Laisser une commentaire</h2>
             </div>
 
-            <div class="nomPrenom">
-                <div class="nom">
-                    <input type="text" placeholder="Nom">
+            <form  >
+
+
+                <div class="nomPrenom">
+                    <div class="nom">
+                        <input type="text" placeholder="Nom">
+                    </div>
+    
+                    <div class="prenom">
+                        <input type="text" placeholder="Prenom">
+                    </div>
+                </div>
+    
+                <div class="telMail">
+                    <div class="tel">
+                        <input type="text" placeholder="Prenom">
+                    </div>
+                    <div class="mail">
+                        <input type="text" placeholder="Prenom">
+                    </div>
+                </div>
+    
+                <div class="message">
+    
+                    <textarea placeholder="Message"></textarea>
+                </div>
+    
+                <div class="envoyer">
+                    <input type="submit" value="Envoyer">
                 </div>
 
-                <div class="prenom">
-                    <input type="text" placeholder="Prenom">
-                </div>
-            </div>
-
-            <div class="telMail">
-                <div class="tel">
-                    <input type="text" placeholder="Prenom">
-                </div>
-                <div class="mail">
-                    <input type="text" placeholder="Prenom">
-                </div>
-            </div>
-
-            <div class="message">
-
-                <textarea placeholder="Message"></textarea>
-            </div>
-
+            </form>
 
 
         </div>
     </div>
+
+    <footer>
+        <p>@2022 - Form | Tous droit reservés</p>
+    </footer>
 
     
 
