@@ -14,7 +14,7 @@
   background-color: #FF7900;
 }
 
-.active{
+.activem{
   background-color: #FF7900!important;
 }
 .projetactive{
@@ -156,9 +156,12 @@ body{
     background-color: #FF7900;
     color: #fff;
   }
+  .profil{
+    background-color: #353E4D!important;
+  }
   
   /* Style the active link (or home/logo) */
-  .active {
+  .activem {
     background-color: #353E4D;
     ;
     color: white;
@@ -337,7 +340,6 @@ body{
     align-items: center;
     justify-content: space-around;
     display: none;
-    margin-top: 110px;
     padding: 15px;
 }
 
@@ -418,7 +420,7 @@ body{
 
 .contenuToutProjets, .contenuProfessionnelsProjets, .contenuPersonnelsProjets{
     display: none;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     padding: 2.5%;
     gap: 10%;
     /* margin-bottom: 100px; */
@@ -437,7 +439,7 @@ body{
     padding: 20px;
     font-size: 30px;
     text-align: justify;
-    width: 400px;
+    width: 385px;
     font-size: 18px;
     height: 400px;
 }
@@ -716,8 +718,19 @@ footer{
 
 
 
-  @media (max-width: 845px)
+  @media (max-width: 870px)
   { 
+
+
+    .contenuToutProjets, .contenuProfessionnelsProjets, .contenuPersonnelsProjets{
+      grid-template-columns: 300px 300px;  
+  }
+
+  .projet{
+    align-items: unset;
+    width: auto;
+    height: auto;
+  }
 
     .apropos{
         justify-content: space-between;
@@ -821,6 +834,8 @@ footer{
     .comments-mobile{
         display: block;
         font-size: 16px;
+        margin-top: 110px;
+        
     }
 
     .portfolios{
@@ -876,7 +891,7 @@ footer{
     }
 
     .projet{
-        height: 400px;
+        height: auto;
     }
 
     .Etapes{

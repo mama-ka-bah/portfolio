@@ -61,9 +61,9 @@ console.log(btns.length);
 for (var i = 0; i < btns.length; i++) {
   console.log("test test");
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("activem");
+    current[0].className = current[0].className.replace(" activem", "");
+    this.className += " activem";
   });
 }
   }
