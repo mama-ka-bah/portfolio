@@ -4,6 +4,30 @@
     padding: 0;
 }
 
+.linkMenu{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact:hover, .port:hover, .about:hover{
+  background-color: #FF7900;
+}
+
+.active{
+  background-color: #FF7900!important;
+}
+.projetactive{
+  background-color: #FF7900;
+}
+
+
+
+.linkTelecharger{
+  color: #353E4D;
+  text-decoration: none;
+}
+
 
 .projet{
   display: flex;
@@ -150,13 +174,13 @@ body{
     /* grid-template-rows: auto auto auto; */
     /* grid-gap: 80px 120px; */
     justify-content: space-around;
-    margin-top: 118px;
+    margin-top: 100px;
 
     align-items: center;
   }
 
   .liens, .photo, .bienvenue{
-    height: 200px;
+    /* height: 200px; */
     background: #FFFFFF;
     box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
   }
@@ -167,7 +191,7 @@ body{
 
   .liens{
     width: 80px;
-    height: 350px;
+    height: 382px;
   }
 
   .photo img{
@@ -307,13 +331,22 @@ body{
     box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
     width: 95%;
     /* height: 170px; */
-    top: 700px;
+    top: 660px;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-around;
     display: none;
     margin-top: 110px;
+    padding: 15px;
+}
+
+.debContact {
+  padding: 22px!important;
+}
+
+.projet p{
+  padding: 15px;
 }
 
 
@@ -322,16 +355,23 @@ body{
 .portfolios{
     display: flex;
     justify-content: space-around;
-    margin-top: 260px;
+    margin-top: 250px;
     align-items: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    /* margin-top: 50px; */
 }
 
 .descriptionPortfolio{
-    height: 110px;
+    height: 150px;
     width: 220px;
     box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 5px;
+    /* margin-top: 300px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
 }
 
 .menuProjets{
@@ -339,46 +379,56 @@ body{
     grid-template-columns: auto auto auto;
     grid-template-rows:  auto auto auto auto;
     box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
-    /* gap: 5px 25px; */
     padding-left: 23px;
     padding-right: 23px;
     column-gap: 25px;
+    background-color: #353E4D;
+    color: #fff;
 }
 
 .toutProjets{
     height: 50px;
-    padding-top: 23px;
+    padding-top: 15px;
+    /* background-color: #FF7900; */
+    padding: 15px;
     /* width: 180px; */
     /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15); */
 
 }
 
+.itemprojet{
+  cursor: pointer;
+}
+
 .professionnelsProjets{
     height: 50px;
-    padding-top: 23px;
+    padding-top: 15px;
     /* width: 190px; */
     /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15); */
-    background-color: #FF7900;
 }
 
 .personnelsProjets{
     height: 50px;
-    padding-top: 23px;
+    padding-top: 15px;
     /* width: 190px; */
     /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
 
 
-.contenuToutProjets{
-    display: grid;
+.contenuToutProjets, .contenuProfessionnelsProjets, .contenuPersonnelsProjets{
+    display: none;
     grid-template-columns: auto auto auto;
     padding: 2.5%;
     gap: 10%;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     justify-content: center;
     align-items: center;
 
+}
+
+.contenuPersonnelsProjets{
+  display: grid;
 }
 
 .projet{
@@ -488,6 +538,7 @@ body{
     margin-left: -330px;
     width: 300px;
     margin-bottom: 25px;
+    font-size: 16px;
 }
 
 /* .fig1{
@@ -583,6 +634,7 @@ input[type=text], textarea {
     border: 1px solid #353E4D;
 }
 
+
 .formContact{
     background-color: #fff;
     padding: 15px;
@@ -591,7 +643,7 @@ input[type=text], textarea {
     flex-direction: column;
     gap:50px;
     color: #353E4D;
-    height: 75%;
+    height: 85%;
     /* flex-wrap: wrap; */
 }
 
@@ -635,6 +687,7 @@ input[type="submit"]{
     font-size: 20px;
     background-color: #FF7900;
     color: #fff;
+    margin-top: 18px;
 }
 .envoyer{
     display: flex;
@@ -772,12 +825,17 @@ footer{
 
     .portfolios{
         flex-direction: column;       
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .descriptionPortfolio{
-        height: 200px;
         width: 95%;
         box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: auto;
     }
 
     .menuProjets{
@@ -806,7 +864,7 @@ footer{
        column-gap: 15px;
     } */
 
-    .contenuToutProjets{
+    .contenuPersonnelsProjets{
         display: flex;
         flex-direction: column;
         width: 95%;

@@ -8,14 +8,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <title>Portfolio KEITA Mahamadou</title>
+
     </head>
+    
     <body>
     <header class="menu">
-        <div class="profil"><span>Logo</span></div>
-        <div class="about"><span>Apros de moi</span></div>
-        <div class="port"><span>Portfolio</span></div>
-        <div class="contact"><span>Contacts</span></div>
-        <div class="cv"><span>Télécharger</span></div>
+        <div class="profil btn" ><span>Logo</span></div>
+        <div class="about btn active" onclick="test()"><span><a class="linkMenu" href="#apropos">Apros de moi</a></span></div>
+        <div class="port btn" onclick="test()"><span><a class="linkMenu" href="#portfolios">Portfolio</a></span></div>
+        <div class="contact btn" onclick="test()"><span><a class="linkMenu" href="#contact">Contacts</a></span></div>
+        <div class="cv" onclick="test()"><span><a class="linkTelecharger" href="images/keita_cv.pdf" target="_blank">Télécharger</a></span></div>
     </header>
 
 
@@ -24,9 +26,9 @@
         <a href="#" class="active">Logo</a>
         <!-- les liens de navigation -->
         <div id="myLinks">
-            <a href="#">À propos</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contacts</a>
+            <a href="#apropos">À propos</a>
+            <a href="portfolios">Portfolio</a>
+            <a href="#contact">Contacts</a>
         </div>
         <!-- le toggle icon et appel à la fonction js -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -44,7 +46,7 @@
     </div>
     
 
-    <div class="apropos">
+    <div class="apropos" id="apropos">
         <div class="bienvenue">
             <div>
                 <h2 class="ctr-bienvenue">bienvenue</h2>
@@ -53,11 +55,12 @@
             </div>
             <div>
                 <p class="description-profil">
-                    Lorem ipsum is a placeholder text commonly
-                    used to demonstrate the visual form of a document
-                    or a typeface without relying on meaningful content.
-                    Lorem ipsum may be used as
-                    a placeholder before final copy is available.
+                    Etant un Develloppeur fullstack et detenteur de licence 
+                    en informatique appliqué à la gestion, je suis capable de 
+                    mener un projet de devellopement de A à Z c'est à dire 
+                    l'analyse, maquettage, frontend, backend, le deploiement et les 
+                    maintenances.
+                    Je m'adapte très facielement à des nouvelles technologies 
 
                 </p>
             </div>
@@ -67,16 +70,16 @@
         </div>
         <div class="liens">
             <div>
-                <i class="fa fa-github" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
             <di>
-                <i class="fa fa-gitlab" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
             </di>
             <di>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </di>
             <di>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </di>
         </div>
 
@@ -120,23 +123,22 @@
         
     </div>
     
-    <div class="portfolios">
+    <div class="portfolios" id="portfolios">
         <div class="descriptionPortfolio">
             <h2>Portfolio</h2>
             <p>
-                Lorem ipsum is a placeholder text commonly
-                used to demonstrate the visual form of a document
-                or a typeface.
+                J'ai eu à travailler sur de mulptiples projets,
+                et acquerir des experiences que vous pouvez visualisez ci-dessus
             </p>
         </div>
         <div class="menuProjets">
-            <div class="toutProjets">
+            <div class="toutProjets itemprojet" onclick="menu()">
                 <h3>Tout</h3>
             </div>
-            <div class="personnelsProjets">
+            <div class="personnelsProjets itemprojet projetactive" onclick="menu()">
                 <h3>Personnels</h3>
             </div>
-            <div class="professionnelsProjets">
+            <div class="professionnelsProjets itemprojet" onclick="menu()">
                 <h3>Professionnels</h3>
             </div>
         </div>
@@ -146,60 +148,51 @@
     <div class="ContenuProjets">
         <div class="contenuToutProjets">
             <div class="projet">
-                <img src="images/error.png" alt="error">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
-                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
-                     deserunt excepturi debitis
-                </p>
-            </div>
-            <div class="projet">
-                <img src="images/art.png" alt="art mali">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
-                    <!-- nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
-                     deserunt excepturi debitis -->
-                </p>
-            </div>
-            <div class="projet">
                 <img src="images/erp.png" alt="erp">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
-                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
-                     deserunt excepturi debitis
+                    Un outil de gestion des activités et salles de Orange Digital Center.
+
                 </p>
             </div>
             <div class="projet">
                 <img src="images/security.png" alt="security">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
-                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
-                     deserunt excepturi debitis
+                    Securisation de son backend à l'aide de Spring et Monitoring des logs
+
                 </p>
             </div>
+        </div>
+        <div class="contenuPersonnelsProjets">
             <div class="projet">
                 <img src="images/enviro2.png" alt="images">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
-                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
-                     deserunt excepturi debitis
+                    Un site web en CMS sur l'environnement.
+
                 </p>
             </div>
             <div class="projet">
                 <img src="images/tirage.png" alt="tirage">
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, dolor eligendi! Ut, 
-                    nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
-                     deserunt excepturi debitis
+                    une api qui va gérer les tirages au sort
                 </p>
             </div>
         </div>
-        <!-- <div class="contenuPersonnelsProjets">
-            
-        </div>
         <div class="contenuProfessionnelsProjets">
-            
-        </div> -->
+            <div class="projet">
+                <img src="images/error.png" alt="error">
+                <p>
+                    Plateforme de gestion des erreurs d'un projet de développement
+                </p>
+            </div>
+            <div class="projet">
+                <img src="images/art.png" alt="art mali">
+                <p>
+                    un site pour montrer le savoir faire artisanal du Mali avec du e-commerce
+                                        <!-- nam ipsum blanditiis consectetur necessitatibus quibusdam quia repudiandae sunt doloremque
+                     deserunt excepturi debitis -->
+                </p>
+            </div>
+        </div>
 
         <div class="plus">
             Voir plus
@@ -211,12 +204,8 @@
             <h2>Mes expeiences</h2>
         </div>
         <div class="contenuExp">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
-                id est laborum.
+            <p style="text-align: center">
+                J'ai éffectué des stages dans des differents entreprises qui m'ont permis d'acquerir de l'experience
             </p>
         </div>
 
@@ -233,22 +222,23 @@
                             <img src="images/2019.png" alt="2019">
                         </div>
                         <div class="fig3">
-                            <img src="images/2020.png" alt="2019">
+                            <img src="images/2020.png" alt="2020">
                         </div>
                     </div>
                 </div>
 
                 <div class="context">
-                    <h3>Etape 1</h3>
+                    <h3>Eaglesoft</h3>
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore
+                        Ma tâche dans cette boite consistait à developper,
+                        commercialiser et deploiyer des modules Odoo(v.8, v.14) sur
+                        des serveurs Ubuntu.
                     </div>
                 </div>
 
             </div>
 
-            <div class="elt">
+            <!-- <div class="elt">
                 <div class="figures">
                     <div class="fig1">
                         <img src="images/barre.png" alt="barre">
@@ -264,13 +254,14 @@
                 </div>
     
                 <div class="context">
-                    <h3>Etape 1</h3>
+                    <h3>Kabakoo</h3>
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore
+                        Stage de 6 mois à kabako en tant que developpeur frontend 
+                        Ma tache consistait à developper des interfaces pour des applications
+                        web et mobile.
                     </div>
                 </div>
-            </div>
+            </div> -->
            
 
             <div class="elt">
@@ -280,19 +271,20 @@
                     </div>
                     <div class="annees">
                         <div class="fig2">
-                            <img src="images/2019.png" alt="2019">
+                            <img src="images/2020.png" alt="2020">
                         </div>
                         <div class="fig3">
-                            <img src="images/2020.png" alt="2019">
+                            <img src="images/2021.png" alt="2021">
                         </div>
                     </div>
                 </div>
 
                 <div class="context">
-                    <h3>Etape 1</h3>
+                    <h3>Orange digital center</h3>
                     <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                        eiusmod tempor incididunt ut labore et dolore
+                        Devellopement des interfaces, des api.
+                        Maquettage et deploiement
+
                     </div>
                 </div>
             </div>
@@ -304,7 +296,7 @@
 
 
     
-    <div class="debContact">
+    <div class="debContact" id="contact">
         Contacts
     </div>
 
@@ -314,8 +306,7 @@
             <div class="detailContact">
                 <h2>Contacter nous</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore
+                    Pour tout besoins n'hesiter à me contacter
                 </p>
             </div>
             <div class="detailContact">
@@ -366,12 +357,12 @@
                 <h2>Laisser une commentaire</h2>
             </div>
 
-            <form  >
+            <form   method="post" class="contact_form">
 
 
                 <div class="nomPrenom">
                     <div class="nom">
-                        <input type="text" placeholder="Nom">
+                        <input type="text" placeholder="Nom" id="name">
                     </div>
     
                     <div class="prenom">
@@ -381,20 +372,20 @@
     
                 <div class="telMail">
                     <div class="tel">
-                        <input type="text" placeholder="Prenom">
+                        <input type="text" placeholder="Telephone">
                     </div>
                     <div class="mail">
-                        <input type="text" placeholder="Prenom">
+                        <input type="text" id="email" placeholder="email">
                     </div>
                 </div>
     
                 <div class="message">
     
-                    <textarea placeholder="Message"></textarea>
+                    <textarea placeholder="Message" id="message"></textarea>
                 </div>
     
                 <div class="envoyer">
-                    <input type="submit" value="Envoyer">
+                    <input type="submit" value="Envoyer" onclick="sendEmail()">
                 </div>
 
             </form>
@@ -407,9 +398,60 @@
         <p>@2022 - Form | Tous droit reservés</p>
     </footer>
 
+
+
+    <!-- <script type="text/javascript">
+
+        const form = document.querySelector('.contact_form');
+
+
+        function sendMsg(e){
+            e.preventDefault();
+            const name = document.querySelector('.name'),
+                email = document.querySelector('.email'),
+                msg = document.querySelector('.msg');
+
+            //fonction pour envoye mail
+
+            Email.send({
+            SecureToken: "75950256-1e28-4136-be8b-eb1440f89499",
+            To:"kmahamadou858@gmail.com",
+            From:email.value,
+            Subject: "Test mail",
+            Body: msg.value
+            }).then(
+            message => alert(message)
+            );
+
+
+        }
+
+        form.addEventListener('submit', sendMsg);
+
+      </script> -->
+
     
 
-    <script type="text/javascript" src="script.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
+
+
+
+    <!-- </script> -->
+
+
+
+
+    <script src="script.js"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        
+        <script type="text/javascript">
+        (function(){
+        emailjs.init("Gg7YTPMpg0YnJVErj");
+        })();
+        </script>
+
+    
 
 
 </body>
