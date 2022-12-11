@@ -780,6 +780,9 @@ footer{
 
   @media screen and (max-width: 767px)
   { 
+    .plus{
+      display: none;
+    }
     
     .menuProjets{
       display: none;
