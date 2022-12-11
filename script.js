@@ -59,7 +59,7 @@ console.log(btns.length);
 
 // Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
-  console.log("test test");
+  // console.log("test test");
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("activem");
     current[0].className = current[0].className.replace(" activem", "");
@@ -74,15 +74,15 @@ for (var i = 0; i < btns.length; i++) {
 
   function menu(){
     // Get the container element
-var items = document.querySelectorAll(".itemprojet");
+  var items = document.querySelectorAll(".itemprojet");
 
-var tout = document.querySelectorAll(".toutProjets");
-var perso = document.querySelectorAll(".personnelsProjets");
-var pro = document.querySelectorAll(".professionnelsProjets");
+  var tout = document.querySelectorAll(".toutProjets");
+  var perso = document.querySelectorAll(".personnelsProjets");
+  var pro = document.querySelectorAll(".professionnelsProjets");
 
-var toutvalue = document.querySelectorAll(".contenuToutProjets");
-var persovalue = document.querySelectorAll(".contenuPersonnelsProjets");
-var provalue = document.querySelectorAll(".contenuProfessionnelsProjets");
+  var toutvalue = document.querySelectorAll(".contenuToutProjets");
+  var persovalue = document.querySelectorAll(".contenuPersonnelsProjets");
+  var provalue = document.querySelectorAll(".contenuProfessionnelsProjets");
 
 
 
@@ -113,6 +113,41 @@ for (var i = 0; i < items.length; i++) {
    this.className += " projetactive";
  });
 }
+ }
+
+
+ function voirplus(){
+
+  var toutvalue = document.querySelectorAll(".contenuToutProjets");
+  var persovalue = document.querySelectorAll(".contenuPersonnelsProjets");
+  var provalue = document.querySelectorAll(".contenuProfessionnelsProjets");
+  var plus = document.querySelectorAll(".plus");
+
+  for (var i = 0; i < plus.length; i++) {
+   
+    plus[i].addEventListener("click", function() {
+      // var current = document.getElementsByClassName("ferme");
+      // current[0].className = current[0].className.replace(" ferme", "");
+      // this.className += " projetactive";
+      // alert(current[0]);
+      if(this.classList.contains('ferme') === true){
+        this.innerHTML = "Voir moins";
+        this.className += "plus";
+
+        toutvalue[0].style.display = "grid"; 
+        persovalue[0].style.display = "grid";
+        provalue[0].style.display = "grid";
+      }else if (this.classList.contains('ferme') === false){
+        this.className += "plus ferme";
+        this.innerHTML = "Voir plus"
+        toutvalue[0].style.display = "none";
+        persovalue[0].style.display = "grid";
+        provalue[0].style.display = "none";
+      }
+    });
+  }
+
+
  }
 
  
