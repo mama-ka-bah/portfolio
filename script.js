@@ -121,15 +121,13 @@ for (var i = 0; i < items.length; i++) {
   var toutvalue = document.querySelectorAll(".contenuToutProjets");
   var persovalue = document.querySelectorAll(".contenuPersonnelsProjets");
   var provalue = document.querySelectorAll(".contenuProfessionnelsProjets");
+
   var plus = document.querySelectorAll(".plus");
 
   for (var i = 0; i < plus.length; i++) {
    
     plus[i].addEventListener("click", function() {
-      // var current = document.getElementsByClassName("ferme");
-      // current[0].className = current[0].className.replace(" ferme", "");
-      // this.className += " projetactive";
-      // alert(current[0]);
+     
       if(this.classList.contains('ferme') === true){
         this.innerHTML = "Voir moins";
         this.className += "plus";
@@ -149,6 +147,10 @@ for (var i = 0; i < items.length; i++) {
 
 
  }
+
+
+
+
 
  
 
