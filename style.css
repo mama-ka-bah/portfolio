@@ -4,6 +4,39 @@
     padding: 0;
 }
 
+/* .descriptionPortfolio{
+  display: none!important;
+} */
+
+.titrePort{
+  display: flex;
+  justify-content: center;
+  background-color: #353E4D;
+  height: 70px;
+  width: 160px;
+  align-items: center;
+  color: #fff;
+  margin-top: 40px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.titrePort h2{
+  font-size: 20px;
+}
+
+.titreapropos h2{
+  display: flex;
+  justify-content: center;
+  background-color: #353E4D;
+  align-items: center;
+  color: #fff;
+  height: 70px;
+  width: 150px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
 .linkMenu{
   color: #fff;
   text-decoration: none;
@@ -111,11 +144,12 @@ body{
     background-color: #fff;
     color:#353E4D;
     height: 50px;
-    width: 120px;
-
+    /* width: 120px; */
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
    }
 
 
@@ -185,7 +219,7 @@ body{
   .liens, .photo, .bienvenue{
     /* height: 200px; */
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.04);
   }
 
   .bienvenue{
@@ -203,7 +237,7 @@ body{
   }
 
   #keita{
-    object-fit: fill;
+    object-fit: contain;
   }
 
   .bienvenue{
@@ -214,7 +248,7 @@ body{
 
   .comments{
     position: absolute;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.04);
     width: 100%;
     height: 170px;
     left: 0px;
@@ -322,7 +356,7 @@ body{
     height: 180px;
     width: 200px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.04);    
   }
 
   .bas_menu_mobile{
@@ -331,7 +365,7 @@ body{
 
   .comments-mobile{
     position: absolute;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.04);
     width: 95%;
     /* height: 170px; */
     top: 660px;
@@ -357,16 +391,16 @@ body{
 .portfolios{
     display: flex;
     justify-content: space-around;
-    margin-top: 250px;
+    flex-direction: column;
+    margin-top: 195px;
     align-items: center;
-    /* margin-bottom: 50px; */
-    /* margin-top: 50px; */
+    border-radius: 15px;
 }
 
 .descriptionPortfolio{
     height: 150px;
     width: 220px;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.04);
     padding: 5px;
     /* margin-top: 300px; */
     display: flex;
@@ -374,27 +408,30 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: justify;
+    display: none!important;
 }
 
 .menuProjets{
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows:  auto auto auto auto;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
-    padding-left: 23px;
-    padding-right: 23px;
-    column-gap: 25px;
+    grid-template-rows:  auto auto auto auto; */
+    /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1); */
+    /* padding-left: 23px;
+    padding-right: 23px; */
+    /* column-gap: 25px; */
     background-color: #353E4D;
     color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
 }
 
 .toutProjets{
     height: 50px;
     padding-top: 15px;
-    /* background-color: #FF7900; */
     padding: 15px;
-    /* width: 180px; */
-    /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15); */
 
 }
 
@@ -405,15 +442,19 @@ body{
 .professionnelsProjets{
     height: 50px;
     padding-top: 15px;
-    /* width: 190px; */
-    /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
 .personnelsProjets{
     height: 50px;
     padding-top: 15px;
-    /* width: 190px; */
-    /* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15); */
+}
+
+.menuProjets div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: inherit;
 }
 
 
@@ -435,7 +476,7 @@ body{
 
 .projet{
     /* height: 40vh; */
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.04);
     padding: 20px;
     font-size: 30px;
     text-align: justify;
@@ -445,13 +486,10 @@ body{
 }
 
 .plus{
-    /* position: absolute; */
     width: 194px;
     height: 64px;
     margin-right: auto;
     margin-left: auto;
-    /* left: 659px; */
-    /* top: 1260px; */
     background: #FF7900;
     font-size: 20px;
     text-align: center;
@@ -463,7 +501,12 @@ body{
     font-weight: bold;
     margin-bottom: 40px;
     cursor: pointer;
+    border-radius: 15px;
+   cursor: pointer;
+}
 
+.plus:hover, input[type="submit"]:hover{
+  background-color: #353E4D;
 }
 
 .mesExperiences{
@@ -482,6 +525,7 @@ body{
 .contenuExp{
     color: white;
     padding: 10px;
+    display: none!important;
 }
 
 .Etapes{
@@ -498,7 +542,7 @@ body{
 .figures{
     /* width: 500px; */
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     /* gap: 5px; */
 }
 
@@ -520,7 +564,7 @@ body{
 
 .fig3 img{
     height: 70px;
-    width: 180px;
+    width: 150px;
 }
 
 .elt{
@@ -540,17 +584,9 @@ body{
 .context{
     margin-left: -330px;
     width: 300px;
-    margin-bottom: 25px;
     font-size: 16px;
+    margin-top: 65px;
 }
-
-/* .fig1{
-    display: flex;
-    flex-direction: column;
-} */
-
-
-
 
 .debContact{
     display: flex;
@@ -559,12 +595,13 @@ body{
     background-color: #353E4D;
     color: #fff;
     margin-bottom: 50px;
-    width: 120px;
-    padding: 10px;
-    height: 30px;
+    width: 140px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
+    border-radius: 15px;
+    font-size: 20px;
 }
 
 
@@ -604,7 +641,7 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.04);
     padding: 15px;
 }
 
@@ -635,6 +672,7 @@ input[type=text], textarea {
     margin: 8px 0;
     box-sizing: border-box;
     border: 1px solid #353E4D;
+    border-radius: 15px;
 }
 
 
@@ -691,6 +729,11 @@ input[type="submit"]{
     background-color: #FF7900;
     color: #fff;
     margin-top: 18px;
+    font-size: 20px;
+    border: none;
+    border: none!important;
+    border-radius: 15px;
+    cursor: pointer;
 }
 .envoyer{
     display: flex;
@@ -726,6 +769,8 @@ footer{
     .contenuToutProjets, .contenuProfessionnelsProjets, .contenuPersonnelsProjets{
       grid-template-columns: 300px 300px;  
   }
+
+  .contenuToutProjets:hover
 
   .projet{
     align-items: unset;
@@ -780,6 +825,19 @@ footer{
 
   @media screen and (max-width: 767px)
   { 
+    .titreapropos{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .titrePort {
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+
+    .apropos{
+      margin-top: 0;
+    }
+
     .plus{
       display: none;
     }
@@ -838,19 +896,18 @@ footer{
     .comments-mobile{
         display: block;
         font-size: 16px;
-        margin-top: 110px;
+        margin-top: 165px;
         
     }
 
     .portfolios{
         flex-direction: column;       
-        /* margin-top: 40px; */
         margin-bottom: 40px;
     }
 
     .descriptionPortfolio{
         width: 95%;
-        box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.04 );
         width: 95%;
         margin-left: 2.5%;
         margin-right: 2.5%;
@@ -896,6 +953,7 @@ footer{
 
     .projet{
         height: auto;
+        width: inherit;
     }
 
     .Etapes{
@@ -925,7 +983,7 @@ footer{
     } */
     
     .projet img{
-      width: 300px;
+      width: inherit;
     }
 
     .annees{
@@ -933,16 +991,12 @@ footer{
         gap: 0px; */
         display: none;
     }
-    /* .context {
-        margin-left: 0px;
-        width: 300px;
-        margin-bottom: 25px; 
-    } */
+   
 
     .context {
         margin-left: 0px;
         width: 100%;
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -983,7 +1037,7 @@ footer{
 
       .cv-mobile{
         margin-bottom: 40px;
-        box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.04);
         display: flex;
         justify-content: center;
         text-align: center;

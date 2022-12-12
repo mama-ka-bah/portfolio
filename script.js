@@ -123,20 +123,20 @@ for (var i = 0; i < items.length; i++) {
   var provalue = document.querySelectorAll(".contenuProfessionnelsProjets");
 
   var plus = document.querySelectorAll(".plus");
-
+console.log
   for (var i = 0; i < plus.length; i++) {
    
     plus[i].addEventListener("click", function() {
      
       if(this.classList.contains('ferme') === true){
         this.innerHTML = "Voir moins";
-        this.className += "plus";
+        this.className = "plus";
 
         toutvalue[0].style.display = "grid"; 
         persovalue[0].style.display = "grid";
         provalue[0].style.display = "grid";
       }else if (this.classList.contains('ferme') === false){
-        this.className += "plus ferme";
+        this.className = "plus ferme";
         this.innerHTML = "Voir plus"
         toutvalue[0].style.display = "none";
         persovalue[0].style.display = "grid";
